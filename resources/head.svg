@@ -21,85 +21,13 @@
         font-family="Arial, sans-serif"
         fill="#E4F4FF">
     Ali Abid
+    <animate attributeName="fill"
+             values="#E4F4FF;#d5b7ed;#decef2;#afe0ff;#c9f1ff"
+             dur="6s"
+             repeatCount="indefinite" />
   </text>
 
   <!-- COLOR BLOBS (masked to text) -->
   <g mask="url(#textMask)">
-
-    <!-- Blob 1 -->
-    <circle cx="120" cy="40" r="28" fill="url(#blobGrad1)" opacity="1.0">
-      <animate attributeName="cx"
-               values="25%;30%;40%;60%"
-               dur="11s"
-               repeatCount="indefinite"/>
-      <animate attributeName="cy"
-               values="-10%;15%;50%;65%;85%;110%"
-               dur="13s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Blob 2 -->
-    <circle cx="120" cy="40" r="28" fill="url(#blobGrad2)" opacity="1.0">
-      <animate attributeName="cx"
-               values="20%;37%;39%;68%"
-               dur="15s"
-               repeatCount="indefinite"/>
-      <animate attributeName="cy"
-               values="-10%;13%;57%;63%;81%;110%"
-               dur="11s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Blob 3 -->
-    <circle cx="120" cy="40" r="28" fill="url(#blobGrad3)" opacity="1.0">
-      <animate attributeName="cx"
-               values="33%;37%;38%;57%"
-               dur="20s"
-               repeatCount="indefinite"/>
-      <animate attributeName="cy"
-               values="-10%;23%;43%;62%;93%;110%"
-               dur="23s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Blob 4 -->
-    <circle cx="120" cy="40" r="28" fill="url(#blobGrad4)" opacity="1.0">
-      <animate attributeName="cx"
-               values="57%;65%;80%;93%"
-               dur="19s"
-               repeatCount="indefinite"/>
-      <animate attributeName="cy"
-               values="-10%;15%;50%;65%;85%;110%"
-               dur="15s"
-               repeatCount="indefinite"/>
-    </circle>
-
-    <defs>
-    <radialGradient id="blobGrad1" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#C08EE9"/>
-      <stop offset="100%" stop-color="#E4F4FF"/>
-    </radialGradient>
-    </defs>
-
-    <defs>
-        <radialGradient id="blobGrad2" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#8F70B6"/>
-        <stop offset="100%" stop-color="#E4F4FF"/>
-        </radialGradient>
-    </defs>
-
-    <defs>
-        <radialGradient id="blobGrad3" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#75DAFF"/>
-        <stop offset="100%" stop-color="#E4F4FF"/>
-        </radialGradient>
-    </defs>
-
-    <defs>
-        <radialGradient id="blobGrad4" cx="50%" cy="50%" r="50%">
-        <stop offset="0%" stop-color="#35ABF5"/>
-        <stop offset="100%" stop-color="#E4F4FF"/>
-        </radialGradient>
-    </defs>
   </g>
 </svg>

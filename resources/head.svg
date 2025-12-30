@@ -19,7 +19,7 @@
         text-anchor="middle"
         font-size="72"
         font-family="Arial, sans-serif"
-        fill="#c9d1d9">
+        fill="#E4F4FF">
     Ali Abid
   </text>
 
@@ -27,52 +27,79 @@
   <g mask="url(#textMask)">
 
     <!-- Blob 1 -->
-    <circle cx="120" cy="40" r="28" fill="#58a6ff" opacity="0.7">
+    <circle cx="120" cy="40" r="28" fill="url(#blobGrad1)" opacity="1.0">
       <animate attributeName="cx"
-               values="120;220;180;120"
+               values="25%;30%;40%;60%"
                dur="11s"
                repeatCount="indefinite"/>
       <animate attributeName="cy"
-               values="40;90;60;40"
+               values="-10%;15%;50%;65%;85%;110%"
                dur="13s"
-               repeatCount="indefinite"/>
-      <animate attributeName="fill"
-               values="#58a6ff;#f778ba;#7ee787;#58a6ff"
-               dur="9s"
                repeatCount="indefinite"/>
     </circle>
 
     <!-- Blob 2 -->
-    <circle cx="320" cy="80" r="34" fill="#f778ba" opacity="0.6">
+    <circle cx="120" cy="40" r="28" fill="url(#blobGrad2)" opacity="1.0">
       <animate attributeName="cx"
-               values="320;260;340;320"
-               dur="17s"
+               values="20%;37%;39%;68%"
+               dur="15s"
                repeatCount="indefinite"/>
       <animate attributeName="cy"
-               values="80;40;70;80"
-               dur="19s"
-               repeatCount="indefinite"/>
-      <animate attributeName="fill"
-               values="#f778ba;#7ee787;#58a6ff;#f778ba"
-               dur="14s"
+               values="-10%;13%;57%;63%;81%;110%"
+               dur="11s"
                repeatCount="indefinite"/>
     </circle>
 
     <!-- Blob 3 -->
-    <circle cx="480" cy="60" r="22" fill="#7ee787" opacity="0.5">
+    <circle cx="120" cy="40" r="28" fill="url(#blobGrad3)" opacity="1.0">
       <animate attributeName="cx"
-               values="480;420;500;480"
-               dur="23s"
+               values="33%;37%;38%;57%"
+               dur="20s"
                repeatCount="indefinite"/>
       <animate attributeName="cy"
-               values="60;100;70;60"
-               dur="29s"
-               repeatCount="indefinite"/>
-      <animate attributeName="fill"
-               values="#7ee787;#58a6ff;#f778ba;#7ee787"
-               dur="21s"
+               values="-10%;23%;43%;62%;93%;110%"
+               dur="23s"
                repeatCount="indefinite"/>
     </circle>
 
+    <!-- Blob 4 -->
+    <circle cx="120" cy="40" r="28" fill="url(#blobGrad4)" opacity="1.0">
+      <animate attributeName="cx"
+               values="57%;65%;80%;93%"
+               dur="19s"
+               repeatCount="indefinite"/>
+      <animate attributeName="cy"
+               values="-10%;15%;50%;65%;85%;110%"
+               dur="15s"
+               repeatCount="indefinite"/>
+    </circle>
+
+    <defs>
+    <radialGradient id="blobGrad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C08EE9"/>
+      <stop offset="100%" stop-color="#E4F4FF"/>
+    </radialGradient>
+    </defs>
+
+    <defs>
+        <radialGradient id="blobGrad2" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#8F70B6"/>
+        <stop offset="100%" stop-color="#E4F4FF"/>
+        </radialGradient>
+    </defs>
+
+    <defs>
+        <radialGradient id="blobGrad3" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#75DAFF"/>
+        <stop offset="100%" stop-color="#E4F4FF"/>
+        </radialGradient>
+    </defs>
+
+    <defs>
+        <radialGradient id="blobGrad4" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#35ABF5"/>
+        <stop offset="100%" stop-color="#E4F4FF"/>
+        </radialGradient>
+    </defs>
   </g>
 </svg>
